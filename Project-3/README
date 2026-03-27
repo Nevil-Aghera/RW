@@ -1,0 +1,42 @@
+
+
+1. Project Title
+
+Sales Data Modeling using Power BI
+
+2. Schema Type
+
+Star Schema
+
+3. Explanation
+
+This project is based on designing an efficient data model using Power
+BI. A Star Schema approach is used where a central fact table (Sales) is
+connected to multiple dimension tables such as Date, Product, Customer,
+and Region.
+
+The Sales table contains transactional data including Sales Amount,
+Cost, Quantity, and Dates. Dimension tables provide descriptive
+information to support analysis.
+
+Relationships are created as One-to-Many between dimension tables and
+the fact table with single cross filter direction to ensure optimal
+performance.
+
+An inactive relationship is implemented using Return Date to analyze
+returned transactions. This is activated using the USERELATIONSHIP
+function in DAX.
+
+Hierarchies are created for Date (Year → Quarter → Month → Day), Product
+(Category → Subcategory → Product), and Region (Country → State → City)
+to allow drill-down analysis.
+
+Data cleaning is performed using Power Query by removing null values,
+correcting data types, and eliminating duplicates.
+
+Test visuals such as bar charts, line charts, and cards are created to
+validate the model and ensure correct working of relationships and
+measures.
+
+Overall, this project demonstrates proper data modeling, DAX usage, and
+report building in Power BI.
