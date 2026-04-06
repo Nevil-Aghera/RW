@@ -1,1 +1,46 @@
+Sales Data Modeling using Power BI
+1. Schema Type
+Star Schema
 
+In this project, a Star Schema is used where one central fact table (Sales_Fact) is connected to multiple dimension tables such as Date, Product, Customer, and Region. This structure improves performance and simplifies reporting.
+
+2. Explanation
+Data Cleaning:
+- Removed duplicate records
+- Handled missing values
+- Converted data types (Date, Number, Text)
+
+Data Modeling:
+- Created fact and dimension tables
+- Applied Star Schema design
+- Maintained One-to-Many relationships
+- Used single cross filter direction
+
+Relationships:
+- Connected dimension tables to fact table
+- Created inactive relationship (Returns Date)
+- Used USERELATIONSHIP() in DAX
+
+DAX Measures:
+- Total Sales
+- Total Profit
+- Total Orders
+- Average Sales
+
+Hierarchies:
+- Date: Year → Quarter → Month → Day
+- Product: Category → Sub-category → Product
+- Region: Country → State → City
+
+Visualizations:
+- Bar chart (Category-wise Sales)
+- Line chart (Sales Trend)
+- Map (Region-wise Sales)
+- Table (Detailed Data)
+
+3. Conclusion
+This project demonstrates building a clean Power BI model using Star Schema, applying DAX functions, and creating interactive dashboards.
+
+4. Tools Used
+Power BI Desktop
+DAX
