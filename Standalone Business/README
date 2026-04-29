@@ -1,0 +1,47 @@
+1. Schema Type
+Star Schema
+
+2. Explanation of Schema
+In this project, a Star Schema is used for efficient data modeling.
+A central Fact Table (Sales) contains transactional data such as quantity, sales amount, and dates.
+It is connected to multiple Dimension Tables like Date, Product, Customer, and Region.
+This structure improves query performance, data clarity, and makes it easier to create reports and dashboards.
+
+3. Data Cleaning & Transformation
+Data was cleaned using Power Query Editor:
+- Removed duplicate records
+- Handled missing/null values
+- Renamed columns for clarity
+- Changed data types (Date, Number)
+- Removed unnecessary columns
+This ensures accurate and reliable analysis.
+
+4. Relationships
+Relationships were created between fact and dimension tables.
+Primary Key to Foreign Key connections were used.
+Single Cross Filter Direction applied.
+Proper Cardinality (One-to-Many) maintained.
+
+5. Special Relationship (Inactive)
+An inactive relationship was created using Returns Date.
+This relationship is not active by default and is used only when needed in calculations.
+
+6. DAX Measure (USERELATIONSHIP)
+Returned Sales = CALCULATE(SUM(Sales[Amount]), USERELATIONSHIP(Sales[Return Date], Date[Date]))
+This allows analysis based on return dates instead of order dates.
+
+7. Hierarchies Created
+Date: Year → Quarter → Month → Day
+Product: Category → Subcategory → Product Name
+Region: Country → State → City
+
+8. Report & Visuals
+Bar charts (Sales by Product/Region)
+Line charts (Sales over time)
+Pie charts (Category distribution)
+KPI cards (Total Sales, Profit, Returns)
+
+9. Conclusion
+This project demonstrates proper use of Star Schema modeling, efficient relationship handling,
+use of DAX functions like USERELATIONSHIP, and creation of meaningful hierarchies and visuals.
+It ensures optimized performance and clear data insights.
