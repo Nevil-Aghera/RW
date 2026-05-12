@@ -1,0 +1,48 @@
+Project Overview
+The primary objective of this project is to explore and analyze household data to understand
+socio-economic trends such as income distribution, family size, and demographics. The project
+is split into two main sections: theory and practical application.
+
+1. Theoretical Foundations
+The theoretical part of the project defines the fundamental statistical concepts used during the
+analysis.
+Types of Data
+Numerical Data: Data that represents quantities and can be measured. Examples include
+Household Income, Age of Household Head, and Family Size.
+Categorical Data: Data that represents characteristics or labels. Examples include
+Education Level, Owns House, and Urban/Rural status.
+Statistical Categories
+Descriptive Statistics: Used to summarize and describe the features of a specific dataset
+(e.g., Mean income, Median age).
+Inferential Statistics: Used to make predictions or generalizations about a larger population
+based on a sample of data.
+Key Terms
+Central Tendency: Mean (average), Median (middle value), and Mode (most frequent
+value).
+Dispersion: Range (Max-Min), Variance (average squared deviation), and Standard
+Deviation (spread of data).
+Distribution Shapes: Skewness (asymmetry) and Kurtosis (peakedness).
+
+2. Practical Analysis
+The analysis was performed using Python libraries such as Pandas, NumPy, and Matplotlib.
+Below are the key steps and findings.
+Data Inspection
+The dataset was loaded and inspected to identify data types and ensure integrity. Numerical
+columns identified include Age, Income, and Family Size, while Categorical columns include
+Education and Location.
+Statistical Summary
+Household Income: Mean ≈ $86,583.21; Median = $93,892.50.
+Age: Mean ≈ 47.09; Median = 48.0.
+Income Spread: The income range is $132,140, indicating significant economic diversity
+within the sample.
+Visualizations
+Visual aids such as histograms were used to observe the frequency distribution of income.
+Boxplots were utilized to compare income across different education levels and geographic
+areas (Urban vs. Rural).
+
+3. Conclusion
+
+The analysis successfully characterized the household dataset, highlighting a slightly left-
+skewed income distribution and a strong correlation between education levels and family size/
+
+income variance.
