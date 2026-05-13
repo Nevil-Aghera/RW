@@ -1,0 +1,78 @@
+# 📘 Statistics & Data Analysis Project
+
+## 📌 Project Overview
+This project contains:
+- Part A (Theory)
+- Part B (Practical)
+
+Implemented using Python in Jupyter Notebook.
+
+---
+
+## 📂 Files Included
+- `Part A & B.ipynb` → Main notebook file
+- `README.md` → Project documentation
+
+---
+
+## 🛠 Technologies Used
+- Python 3
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+
+---
+
+## 📖 Part A – Theory Topics
+- Types of Data
+- Descriptive Statistics
+- Inferential Statistics
+- Mean, Median & Mode
+- Variance & Standard Deviation
+
+---
+
+## 💻 Part B – Practical Topics
+- Dataset Loading
+- Data Cleaning
+- Statistical Analysis
+- Histogram Creation
+- Data Visualization
+- Python Coding
+
+---
+
+## ▶️ How to Run
+
+```bash
+pip install pandas numpy matplotlib
+jupyter notebook
+```
+
+Open:
+```bash
+Part A & B.ipynb
+```
+
+Run all cells.
+
+---
+
+## 🎯 Learning Objectives
+- Learn Statistics Basics
+- Perform Data Analysis
+- Create Visualizations
+- Understand Python Practical Concepts
+
+---
+
+## 👨‍💻 Author
+Created for academic learning and project practice.
+
+---
+
+## 📌 Notes
+- Educational Purpose Only
+- Editable Notebook
+- Practical Demonstration Included
