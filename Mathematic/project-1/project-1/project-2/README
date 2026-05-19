@@ -1,0 +1,93 @@
+🎲 Probability Analysis Project
+
+Welcome to the Probability Analysis Project developed using Python and Jupyter Notebook.
+This project demonstrates the concepts of Probability, Statistics, and Data Analysis with practical implementation and visualizations.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 Project Overview
+
+✔ Basic Probability Concepts
+✔ Statistical Calculations
+✔ Data Visualization
+✔ Mathematical Analysis
+✔ Python Programming Examples
+✔ Dataset Handling & Analysis
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛠 Technologies Used
+
+🐍 Python
+📓 Jupyter Notebook
+📊 Pandas
+🔢 NumPy
+📈 Matplotlib
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📂 Project Files
+
+📓 Probability_Analysis_Project.ipynb
+📄 README.txt
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💻 Features
+
+✅ Probability Calculations
+✅ Statistical Operations
+✅ Data Cleaning & Processing
+✅ Graphs and Charts
+✅ Histogram Analysis
+✅ Visualization Techniques
+✅ Python-based Practical Examples
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+▶️ How to Run the Project
+
+1️⃣ Install Required Libraries
+
+pip install pandas numpy matplotlib
+
+2️⃣ Open Jupyter Notebook
+
+jupyter notebook
+
+3️⃣ Open the Project File
+
+Probability_Analysis_Project.ipynb
+
+4️⃣ Run All Cells
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 Learning Objectives
+
+✔ Understand Probability Concepts
+✔ Learn Statistical Analysis
+✔ Work with Real-world Data
+✔ Create Data Visualizations
+✔ Improve Python Programming Skills
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👨‍💻 Author
+
+Created for academic learning and practical implementation of Probability and Data Analysis using Python.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ Notes
+
+✔ Beginner Friendly
+✔ Easy to Understand
+✔ Fully Editable
+✔ Practical + Theory Combined
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📌 Project Status
+
+✅ Completed Successfully
