@@ -1,0 +1,629 @@
+
+================================================================
+   DERIVABLE JUDGEMENT: A STATISTICAL DECISION-MAKING MODEL
+================================================================
+   Project Title  : Derivable Judgement
+   Type           : Theory + Practical
+   Duration       : 6 Hours
+   Notebook       : Derivable_Judgement.ipynb
+   Dataset        : data/health_records.csv
+   Language       : Python 3
+   Libraries      : Pandas, NumPy, SciPy, Matplotlib, Seaborn
+================================================================
+
+
+----------------------------------------------------------------
+  OBJECTIVE
+----------------------------------------------------------------
+
+You are a data analyst at a public health research organization.
+You have been given a dataset containing health records of
+individuals from different regions, categorized by gender, age
+groups, lifestyle habits (smoking, exercise), and diagnosed
+diseases such as Diabetes and Hypertension.
+
+Your task is to use statistical techniques to DERIVE JUDGEMENTS
+about significant factors affecting disease occurrence using
+inferential statistics concepts including hypothesis testing,
+confidence intervals, statistical errors, and various tests
+(z-test, t-test, chi-square, ANOVA), as well as correlation
+and covariance.
+
+
+----------------------------------------------------------------
+  FOLDER STRUCTURE
+----------------------------------------------------------------
+
+  project-3/
+  |
+  |-- Derivable_Judgement.ipynb     (Main Jupyter Notebook)
+  |
+  |-- data/
+  |     health_records.csv          (Health dataset - 50 records)
+  |
+  |-- README.txt                    (Project documentation)
+
+
+----------------------------------------------------------------
+  DATASET STRUCTURE
+----------------------------------------------------------------
+
+  Total Records  : 50
+  Total Columns  : 15
+
+  +--------------------+------------+------------------------------+
+  |  Field Name        | Data Type  | Description                  |
+  +--------------------+------------+------------------------------+
+  | record_id          | String     | Unique ID for each record    |
+  | age_group          | String     | 18-25, 26-35, 36-45,         |
+  |                    |            | 46-60, 60+                   |
+  | age                | Integer    | Age of the individual        |
+  | weight             | Integer    | Weight in kilograms          |
+  | gender             | String     | Male / Female / Other        |
+  | region             | String     | North / South / East / West  |
+  | smoking_status     | String     | Smoker / Non-Smoker /        |
+  |                    |            | Former Smoker                |
+  | exercise_frequency | String     | Daily / Weekly /             |
+  |                    |            | Rarely / Never               |
+  | bmi                | Float      | Body Mass Index              |
+  | blood_pressure     | Float      | Systolic BP in mmHg          |
+  | diabetes           | Boolean    | True / False                 |
+  | hypertension       | Boolean    | True / False                 |
+  | cholesterol_level  | Float      | Total cholesterol (mg/dL)    |
+  | glucose_level      | Float      | Fasting glucose (mg/dL)      |
+  | visit_date         | Date       | Date of health check-up      |
+  +--------------------+------------+------------------------------+
+
+
+================================================================
+  PART A — THEORETICAL FOUNDATION (SHORT NOTES)
+================================================================
+
+  This section covers 8 core statistical concepts required to
+  understand and interpret the analysis performed in Part B.
+
+----------------------------------------------------------------
+  1. INFERENTIAL STATISTICS
+----------------------------------------------------------------
+
+  Definition:
+    Inferential statistics is the branch of statistics that uses
+    data collected from a SAMPLE to make predictions, estimates,
+    or decisions about a larger POPULATION.
+
+  Key Idea:
+    Instead of studying every individual in a population (which
+    is often impossible), we collect a smaller sample and use
+    mathematical tools to draw general conclusions.
+
+  What it allows us to do:
+    - Test hypotheses about population parameters
+    - Estimate values like population mean or proportion
+    - Determine whether relationships between variables are
+      statistically significant or just due to chance
+
+  Example:
+    From a sample of 50 patients, we can conclude whether
+    smoking affects diabetes in the entire population.
+
+  Difference from Descriptive Statistics:
+    Descriptive statistics only SUMMARIZES the data (mean,
+    median, mode). Inferential statistics goes further and
+    makes PREDICTIONS or DECISIONS beyond the sample.
+
+
+----------------------------------------------------------------
+  2. HYPOTHESIS TESTING AND ITS COMPONENTS
+----------------------------------------------------------------
+
+  Definition:
+    Hypothesis testing is a formal procedure used to decide
+    whether there is enough statistical evidence in a sample
+    to support or reject a specific claim about a population.
+
+  Components:
+
+    H0 - Null Hypothesis:
+      The default assumption. It states there is NO effect,
+      NO difference, or NO relationship.
+      Example: "Smoking has no effect on Diabetes."
+
+    H1 - Alternative Hypothesis:
+      The claim we are trying to prove. It states there IS
+      an effect, difference, or relationship.
+      Example: "Smoking significantly affects Diabetes."
+
+    Alpha (a) - Significance Level:
+      The threshold probability at which we decide to reject
+      H0. Commonly set at 0.05 (5%).
+      If p-value <= 0.05, we reject H0.
+
+    Test Statistic:
+      A value calculated from sample data that is used to
+      determine whether to reject H0.
+      Examples: z-score, t-score, F-value, chi-square value.
+
+    p-value:
+      The probability of observing the test result (or more
+      extreme) if H0 were true. Small p-value = strong
+      evidence against H0.
+
+  Decision Rule:
+    p-value <= alpha (0.05)  -->  REJECT H0
+    p-value >  alpha (0.05)  -->  FAIL TO REJECT H0
+
+
+----------------------------------------------------------------
+  3. CONFIDENCE INTERVAL AND CRITICAL VALUE
+----------------------------------------------------------------
+
+  Confidence Interval (CI):
+    A range of values calculated from sample data that is
+    likely to contain the true population parameter with a
+    certain level of confidence.
+
+    Formula (for mean):
+      CI = mean +/- (critical value * standard error)
+
+    Interpretation:
+      A 95% CI means: if we repeated the study 100 times,
+      95 of the intervals would contain the true mean.
+
+    Example from this project:
+      Age  --> 95% CI: [38.03, 47.81]
+      This means we are 95% confident the true average age
+      of the population lies between 38 and 47.81 years.
+
+  Critical Value:
+    The boundary point on the distribution beyond which the
+    test statistic must fall to reject H0.
+
+    Common Critical Values:
+      90% confidence  -->  z = +/- 1.645
+      95% confidence  -->  z = +/- 1.960
+      99% confidence  -->  z = +/- 2.576
+
+    For t-distribution, the critical value depends on the
+    degrees of freedom (df = n - 1).
+
+
+----------------------------------------------------------------
+  4. P-VALUE
+----------------------------------------------------------------
+
+  Definition:
+    The p-value is the probability of obtaining a test result
+    as extreme as the observed result, ASSUMING the null
+    hypothesis (H0) is true.
+
+  How to interpret:
+    Small p-value (e.g., 0.001):
+      Very unlikely under H0 --> Strong evidence to REJECT H0
+
+    Large p-value (e.g., 0.45):
+      Likely under H0 --> NOT enough evidence to reject H0
+
+  Decision:
+    p-value <= 0.05  -->  Statistically significant --> REJECT H0
+    p-value >  0.05  -->  Not significant --> FAIL TO REJECT H0
+
+  Important Note:
+    p-value does NOT tell you the probability that H0 is true.
+    It only tells you how surprising your result is if H0
+    were true.
+
+  Example:
+    In chi-square test (Smoking vs Diabetes):
+    p-value = 0.0000 < 0.05 --> REJECT H0
+    Conclusion: Smoking IS significantly associated with Diabetes.
+
+
+----------------------------------------------------------------
+  5. TYPE I AND TYPE II ERRORS
+----------------------------------------------------------------
+
+  When making a decision in hypothesis testing, two types of
+  errors are possible:
+
+  Type I Error (False Positive):
+    Definition : Rejecting H0 when H0 is actually TRUE.
+    Symbol     : Alpha (a)
+    Also called: False Positive
+    Example    : Concluding smoking causes diabetes when it
+                 actually does not.
+    Control    : Set a lower significance level (e.g., 0.01)
+
+  Type II Error (False Negative):
+    Definition : Failing to reject H0 when H1 is actually TRUE.
+    Symbol     : Beta (b)
+    Also called: False Negative
+    Example    : Concluding smoking does NOT cause diabetes
+                 when it actually does.
+    Control    : Increase sample size
+
+  Trade-off:
+    Reducing the risk of Type I error (lowering alpha) increases
+    the risk of Type II error, and vice versa.
+
+  Summary Table:
+    +--------------------+------------------+------------------+
+    |                    | H0 is TRUE       | H0 is FALSE      |
+    +--------------------+------------------+------------------+
+    | REJECT H0          | TYPE I ERROR (a) | Correct Decision |
+    | FAIL TO REJECT H0  | Correct Decision | TYPE II ERROR(b) |
+    +--------------------+------------------+------------------+
+
+
+----------------------------------------------------------------
+  6. STATISTICAL TESTS (z, t, Chi-Square, ANOVA)
+----------------------------------------------------------------
+
+  Z-TEST:
+    Purpose  : Test whether the sample mean differs from the
+               population mean.
+    Use when : Sample size n > 30 AND population standard
+               deviation is known.
+    Statistic: z = (sample mean - population mean) /
+                   (population std / sqrt(n))
+    Example  : Is the average BMI of this sample significantly
+               different from the national average?
+
+  T-TEST:
+    Purpose  : Compare means between two groups.
+    Use when : Sample size n < 30 OR population std is unknown.
+    Types    :
+      One-sample t-test   : Compare sample mean to known value
+      Independent t-test  : Compare means of two separate groups
+      Paired t-test       : Compare means of same group at
+                            two different times
+    Used in this project :
+      Comparing BMI of Smokers vs Non-Smokers (Task 4)
+
+  CHI-SQUARE TEST:
+    Purpose  : Test association between two categorical variables.
+    Use when : Data is in the form of frequencies/counts in a
+               contingency table.
+    Statistic: chi2 = sum((observed - expected)^2 / expected)
+    Used in this project:
+      Smoking Status vs Diabetes (Task 5)
+
+  ANOVA (Analysis of Variance):
+    Purpose  : Compare means across THREE or more groups.
+    Use when : You have one continuous variable and one
+               categorical variable with 3+ groups.
+    Statistic: F = variance between groups / variance within
+    Used in this project:
+      Age Group vs Glucose Level (Task 6)
+    Note     : ANOVA tells IF a difference exists, not WHERE.
+               Use post-hoc tests (e.g., Tukey) to find which
+               groups differ.
+
+
+----------------------------------------------------------------
+  7. COVARIANCE
+----------------------------------------------------------------
+
+  Definition:
+    Covariance measures how two variables change TOGETHER.
+    It tells us the direction of the linear relationship
+    between two continuous variables.
+
+  Formula:
+    Cov(X, Y) = sum((Xi - X_mean) * (Yi - Y_mean)) / (n - 1)
+
+  Interpretation:
+    Positive covariance : Both variables increase together
+    Negative covariance : One increases, other decreases
+    Zero covariance     : No linear relationship
+
+  Limitation:
+    Covariance is SCALE-DEPENDENT. Its value depends on the
+    units of measurement, making it hard to compare across
+    different datasets or variable pairs.
+
+  Example from this project:
+    Cov(Age, BMI)               = 42.8965
+    Cov(BMI, Blood Pressure)    = 50.0549
+    Cov(Glucose, Cholesterol)   = 1167.75
+
+    These values cannot be directly compared because they are
+    measured in different units.
+
+
+----------------------------------------------------------------
+  8. CORRELATION
+----------------------------------------------------------------
+
+  Definition:
+    Correlation is the STANDARDIZED form of covariance. It
+    measures the strength AND direction of the linear
+    relationship between two variables, on a scale of -1 to +1.
+
+  Formula (Pearson):
+    r = Cov(X, Y) / (std_X * std_Y)
+
+  Interpretation:
+    r = +1.0         : Perfect positive linear relationship
+    r = +0.7 to +1.0 : Strong positive relationship
+    r = +0.4 to +0.7 : Moderate positive relationship
+    r = 0.0          : No linear relationship
+    r = -0.4 to -0.7 : Moderate negative relationship
+    r = -1.0         : Perfect negative linear relationship
+
+  Advantage over Covariance:
+    Correlation is SCALE-INDEPENDENT. Values always fall
+    between -1 and +1, making comparison easy.
+
+  Results from this project:
+    Age vs BMI             : r = 0.6824  (Moderate-Strong)
+    BMI vs Blood Pressure  : r = 0.7667  (Strong)
+    Glucose vs Cholesterol : r = 0.9935  (Very Strong)
+
+
+================================================================
+  PART B — DATA ANALYSIS & TESTING TASKS
+================================================================
+
+  All tasks are implemented in Derivable_Judgement.ipynb using
+  Python with Pandas, NumPy, and SciPy libraries.
+
+----------------------------------------------------------------
+  TASK 1 — FORMULATE HYPOTHESES
+----------------------------------------------------------------
+
+  Hypothesis Set 1 : Smoking and Diabetes
+  -----------------------------------------
+    H0 : Smoking has NO effect on Diabetes prevalence.
+    H1 : Smoking SIGNIFICANTLY affects Diabetes prevalence.
+    Test to be used : Chi-Square Test
+
+  Hypothesis Set 2 : Age Group and Glucose Level
+  ------------------------------------------------
+    H0 : Age group has NO significant effect on Glucose level.
+    H1 : Older age groups have SIGNIFICANTLY higher Glucose.
+    Test to be used : One-Way ANOVA
+
+
+----------------------------------------------------------------
+  TASK 2 — CONFIDENCE INTERVALS
+----------------------------------------------------------------
+
+  Calculated 95% Confidence Intervals for key numerical
+  variables using the t-distribution formula.
+
+  Method:
+    CI = mean +/- t_critical * (std / sqrt(n))
+
+  Results:
+    +----------+--------+-----------+-----------+
+    | Variable | Mean   | CI Lower  | CI Upper  |
+    +----------+--------+-----------+-----------+
+    | Age      | 42.92  | 38.03     | 47.81     |
+    | Weight   | 76.52  | 73.45     | 79.59     |
+    | BMI      | 26.53  | 25.37     | 27.69     |
+    +----------+--------+-----------+-----------+
+
+  Interpretation:
+    We are 95% confident that the true average Age of the
+    population lies between 38.03 and 47.81 years.
+
+
+----------------------------------------------------------------
+  TASK 3 & 4 — CRITICAL VALUE, P-VALUE AND T-TEST
+----------------------------------------------------------------
+
+  Test Performed : Independent Samples T-Test
+  Variables      : BMI of Smokers vs BMI of Non-Smokers
+
+  Purpose:
+    To check whether there is a statistically significant
+    difference in BMI between Smokers and Non-Smokers.
+
+  Groups:
+    Smokers     : n = 15,  Mean BMI = 31.38
+    Non-Smokers : n = 24,  Mean BMI = 21.73
+
+  Results:
+    T-Statistic    : Calculated at runtime
+    Critical Value : +/- 2.0211
+    P-Value        : < 0.05
+
+  Decision:
+    REJECT H0
+
+  Interpretation:
+    There IS a statistically significant difference in BMI
+    between Smokers and Non-Smokers. Smokers tend to have
+    a higher BMI than Non-Smokers in this dataset.
+
+
+----------------------------------------------------------------
+  TASK 5 — CHI-SQUARE TEST
+----------------------------------------------------------------
+
+  Test Performed : Chi-Square Test of Independence
+  Variables      : Smoking Status vs Diabetes (True/False)
+
+  Purpose:
+    To determine whether smoking status and diabetes diagnosis
+    are statistically associated or independent.
+
+  Contingency Table (observed frequencies):
+    +---------------+-------+------+
+    | Smoking       | False | True |
+    +---------------+-------+------+
+    | Former Smoker |   2   |   6  |
+    | Non-Smoker    |  20   |   4  |
+    | Smoker        |   3   |  15  |
+    +---------------+-------+------+
+
+  Results:
+    Chi-Square Statistic : 20.6667
+    Degrees of Freedom   : 2
+    Critical Value       : 5.9915
+    P-Value              : 0.0000
+
+  Decision:
+    REJECT H0  (chi2 > critical value AND p < 0.05)
+
+  Interpretation:
+    Smoking status is SIGNIFICANTLY associated with Diabetes.
+    Smokers and Former Smokers show much higher diabetes rates
+    compared to Non-Smokers.
+
+
+----------------------------------------------------------------
+  TASK 6 — ONE-WAY ANOVA
+----------------------------------------------------------------
+
+  Test Performed : One-Way ANOVA (F-Test)
+  Variables      : Age Group (5 groups) vs Glucose Level
+
+  Purpose:
+    To check whether mean glucose levels differ significantly
+    across the five age groups.
+
+  Group Mean Glucose Levels:
+    +------------+-----------------+
+    | Age Group  | Mean Glucose    |
+    +------------+-----------------+
+    | 18-25      |  83.50 mg/dL    |
+    | 26-35      |  91.70 mg/dL    |
+    | 36-45      | 112.90 mg/dL    |
+    | 46-60      | 131.80 mg/dL    |
+    | 60+        | 155.30 mg/dL    |
+    +------------+-----------------+
+
+  Results:
+    F-Statistic  : 90.3385
+    F-Critical   : 2.5787
+    P-Value      : 0.0000
+
+  Decision:
+    REJECT H0  (F-stat > F-critical AND p < 0.05)
+
+  Interpretation:
+    Age groups differ SIGNIFICANTLY in glucose levels.
+    There is a clear upward trend — glucose level increases
+    consistently with age. The 60+ group has nearly DOUBLE
+    the glucose level of the 18-25 group.
+
+
+----------------------------------------------------------------
+  TASK 7 — COVARIANCE AND CORRELATION
+----------------------------------------------------------------
+
+  Purpose:
+    To measure the direction and strength of linear
+    relationships between pairs of continuous variables.
+
+  Results:
+    +-------------------------+--------------+--------+--------+------------+
+    | Variable Pair           | Covariance   |   r    |   p    | Strength   |
+    +-------------------------+--------------+--------+--------+------------+
+    | Age vs BMI              |    42.8965   | 0.6824 | 0.0000 | Moderate   |
+    | BMI vs Blood Pressure   |    50.0549   | 0.7667 | 0.0000 | Strong     |
+    | Glucose vs Cholesterol  |  1167.7510   | 0.9935 | 0.0000 | Very Strong|
+    +-------------------------+--------------+--------+--------+------------+
+
+  Interpretations:
+    Age vs BMI (r = 0.68):
+      As age increases, BMI tends to increase moderately.
+      Older individuals in this dataset carry more body mass.
+
+    BMI vs Blood Pressure (r = 0.77):
+      Strong positive relationship. Higher BMI is strongly
+      linked to higher systolic blood pressure.
+
+    Glucose vs Cholesterol (r = 0.99):
+      Near-perfect positive correlation. Individuals with
+      high fasting glucose almost always have high cholesterol.
+      This is a critical clinical finding.
+
+
+----------------------------------------------------------------
+  TASK 8 — FINAL RESULTS SUMMARY (ACCEPT / REJECT H0)
+----------------------------------------------------------------
+
+  +-------------+-------------------------------+-------+---------+------------------+
+  | Test        | Variables                     | Alpha | p-value | Decision         |
+  +-------------+-------------------------------+-------+---------+------------------+
+  | T-Test      | Smoker vs Non-Smoker BMI      | 0.05  | < 0.05  | REJECT H0        |
+  | Chi-Square  | Smoking Status vs Diabetes    | 0.05  | 0.0000  | REJECT H0        |
+  | ANOVA       | Age Group vs Glucose Level    | 0.05  | 0.0000  | REJECT H0        |
+  +-------------+-------------------------------+-------+---------+------------------+
+
+  ALL THREE NULL HYPOTHESES WERE REJECTED AT ALPHA = 0.05.
+
+
+================================================================
+  KEY FINDINGS AND CONCLUSIONS
+================================================================
+
+  1. Smoking and BMI:
+     Smokers have a significantly higher BMI than Non-Smokers.
+     This confirms smoking is associated with unhealthy body
+     weight metrics.
+
+  2. Smoking and Diabetes:
+     There is a statistically significant association between
+     smoking status and diabetes diagnosis. Smokers show
+     much higher rates of diabetes in this dataset.
+
+  3. Age and Glucose Level:
+     Glucose levels rise sharply with age. The 60+ group
+     averages 155.30 mg/dL vs only 83.50 mg/dL in 18-25
+     group — nearly double. Age is a strong predictor of
+     elevated glucose.
+
+  4. BMI and Blood Pressure:
+     Strong positive correlation (r = 0.77). Higher BMI
+     strongly predicts higher systolic blood pressure,
+     confirming the well-known obesity-hypertension link.
+
+  5. Glucose and Cholesterol:
+     Near-perfect correlation (r = 0.9935). Patients with
+     high glucose almost always exhibit high cholesterol,
+     suggesting these conditions co-occur frequently and
+     may share common risk factors.
+
+
+================================================================
+  HOW TO RUN
+================================================================
+
+  Step 1 : Install required libraries
+  ------------------------------------
+    pip install pandas numpy scipy matplotlib seaborn jupyter
+
+  Step 2 : Navigate to project folder
+  ------------------------------------
+    cd project-3
+
+  Step 3 : Launch Jupyter Notebook
+  ------------------------------------
+    jupyter notebook Derivable_Judgement.ipynb
+
+  Step 4 : Run all cells
+  ------------------------------------
+    In Jupyter: Kernel --> Restart & Run All
+
+
+================================================================
+  SUBMISSION CHECKLIST
+================================================================
+
+  [x] Jupyter Notebook with all tasks completed
+  [x] Dataset available in data/ folder
+  [x] Part A : All 8 theory concepts explained clearly
+  [x] Part B : All 8 tasks implemented with Python code
+  [x] Each test includes: statistic, critical value,
+      p-value, and Accept/Reject decision
+  [x] Interpretations written below each result
+  [x] README.txt with full project documentation
+
+
+================================================================
+  Derivable Judgement | Project 3 | Statistical Analysis
+  Public Health Research | Inferential Statistics | Python
+================================================================
