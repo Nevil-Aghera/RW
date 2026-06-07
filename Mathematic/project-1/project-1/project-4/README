@@ -1,0 +1,166 @@
+# 📊 Statistical Distribution Analysis of Transaction Data
+
+> **Course Assignment** — Statistical Distributions, Probability Modelling & Data Analysis  
+> **Dataset**: Financial Transaction Records | **Tools**: Python, NumPy, Pandas, SciPy, Statsmodels, Matplotlib, Seaborn
+
+---
+
+## 📌 Project Overview
+
+This project performs an end-to-end **statistical distribution analysis** on a real-world financial transaction dataset containing **220 records** across January 2023. The goal is to understand the probabilistic nature of transaction behaviour and model it using multiple statistical distributions.
+
+---
+
+## 📁 Repository Structure
+
+```
+📦 Statistical-Distribution-Analysis/
+├── 📓 Statistical_Distribution_Analysis.ipynb   ← Main Jupyter Notebook (all tasks)
+├── 📊 1780737668182_transaction.xlsx            ← Dataset
+├── 🖼️  bernoulli_binomial.png                   ← Task 1 chart
+├── 🖼️  poisson_distribution.png                 ← Task 2 chart
+├── 🖼️  lognormal_powerlaw.png                   ← Task 3 chart
+├── 🖼️  qqplot.png                               ← Task 4 chart
+├── 🖼️  boxcox_transform.png                     ← Task 5 chart
+├── 🖼️  zscore_analysis.png                      ← Task 6 chart
+├── 🖼️  pdf_cdf.png                              ← Task 7 chart
+├── 🖼️  best_fit_comparison.png                  ← Task 8 chart
+└── 📄 README.md                                 ← This file
+```
+
+---
+
+## 🗂️ Dataset Description
+
+
+
+| Field Name | Data Type | Description |
+|---|---|---|
+| `transaction_id` | UUID/String | Unique identifier for each transaction |
+| `customer_id` | UUID/String | Unique identifier for each customer |
+| `transaction_amount` | Float | Total amount of the transaction (₹) |
+| `transaction_date` | Date | Date of the transaction (Jan 2023) |
+| `transaction_count` | Int | Number of transactions per customer in a week |
+| `region` | String | Customer's geographic region (North/South/East/West) |
+| `transaction_status` | String | Whether transaction was successful or failed (Success/Fail) |
+
+### 🔍 Key Dataset Stats
+- **Total Transactions**: 220
+- **Date Range**: 01 Jan 2023 – 31 Jan 2023
+- **Success Rate**: 44.5% (98 Success, 122 Fail)
+- **Amount Range**: ₹804 – ₹20,462
+- **Average Amount**: ₹3,365
+- **Average Transactions/Day**: ~7.1
+
+---
+
+## ✅ Task Checklist
+
+### Part A — Theoretical Foundation
+
+All 11 theoretical concepts are covered with detailed explanations inside the notebook:
+
+| # | Topic | Status |
+|---|---|---|
+| 1 | Statistical Distributions | ✅ |
+| 2 | Q-Q Plot and its purpose | ✅ |
+| 3 | Discrete vs Continuous Distributions | ✅ |
+| 4 | Bernoulli Distribution | ✅ |
+| 5 | Binomial Distribution | ✅ |
+| 6 | Log-Normal Distribution | ✅ |
+| 7 | Power Law Distribution | ✅ |
+| 8 | Box-Cox Transform | ✅ |
+| 9 | Poisson Distribution with example | ✅ |
+| 10 | Z-score Probability | ✅ |
+| 11 | PDF vs CDF | ✅ |
+
+---
+
+### Part B — Data Analysis & Testing Tasks
+
+| # | Task | Distribution | Result |
+|---|---|---|---|
+| 1 | Fit Bernoulli & Binomial | Bernoulli / Binomial | p = 0.4455; Binomial mean ≈ 4.05/week |
+| 2 | Fit Poisson distribution | Poisson | λ = 7.10 transactions/day |
+| 3 | Model transaction amounts | Log-Normal + Power Law | Log-Normal: μ=8.00, σ=0.47 |
+| 4 | Q-Q Plot for normality | Normal (test) | Raw amounts NOT normal; log-transform is near-normal |
+| 5 | Box-Cox Transformation | Power transform | λ = −0.18; skewness reduced significantly |
+| 6 | Z-Score & P(Amount > ₹5000) | Normal (Z) | 11.4% of transactions exceed ₹5000 |
+| 7 | PDF & CDF of amounts | Empirical + Log-Normal | 88.6% of transactions ≤ ₹5000 |
+| 8 | Best distribution fit | Comparison (KS Test) | **Log-Normal** is the best fit ✅ |
+
+---
+
+## 📊 Key Visualisations
+
+| Chart | Description |
+|---|---|
+| `bernoulli_binomial.png` | Bernoulli bar chart + Binomial PMF vs observed weekly counts |
+| `poisson_distribution.png` | Poisson PMF vs observed daily counts + daily timeline |
+| `lognormal_powerlaw.png` | Histogram with Log-Normal and Power Law PDF overlays |
+| `qqplot.png` | Q-Q plots for raw and log-transformed amounts |
+| `boxcox_transform.png` | Before/after histograms showing Box-Cox effect |
+| `zscore_analysis.png` | Z-score distribution with ₹5000 threshold shaded |
+| `pdf_cdf.png` | KDE + Log-Normal PDF and ECDF + CDF overlay |
+| `best_fit_comparison.png` | All 3 distributions overlaid with KS statistics |
+
+---
+
+## 🧠 Final Conclusions
+
+| Insight | Business Action |
+|---|---|
+| **44.5% success rate** (Bernoulli) | Investigate root cause of 55.5% failures |
+| **λ = 7.1 transactions/day** (Poisson) | Plan server capacity for ~8 transactions/day peak |
+| **Log-Normal best fits amounts** | Use Log-Normal for risk modelling and pricing |
+| **11.4% exceed ₹5000** (Z-score) | Flag Z > 0.83 transactions for fraud review |
+| **Box-Cox λ ≈ −0.18** | Apply transformation before any normality-based test |
+| **Log-Normal confirmed by KS Test** | Adopt Log-Normal for VaR, anomaly detection models |
+
+> **🏆 Best Distribution**: Log-Normal distribution provides the best statistical fit for transaction amounts, confirmed by the Kolmogorov-Smirnov test, Q-Q plot alignment, and visual inspection.
+
+---
+
+## 🚀 How to Run
+
+### Prerequisites
+```bash
+pip install numpy pandas matplotlib seaborn scipy statsmodels openpyxl
+```
+
+### Steps
+1. Clone or download this repository
+2. Place `1780737668182_transaction.xlsx` in the same folder as the notebook
+3. Launch Jupyter:
+   ```bash
+   jupyter notebook Statistical_Distribution_Analysis.ipynb
+   ```
+4. Run all cells top-to-bottom (`Kernel → Restart & Run All`)
+
+---
+
+## 🛠️ Tech Stack
+
+| Library | Version | Purpose |
+|---|---|---|
+| Python | 3.9+ | Core language |
+| NumPy | Latest | Numerical computation |
+| Pandas | Latest | Data manipulation |
+| SciPy | Latest | Distribution fitting & statistical tests |
+| Statsmodels | Latest | Advanced statistical modelling |
+| Matplotlib | Latest | Plotting |
+| Seaborn | Latest | Statistical visualization |
+| OpenPyXL | Latest | Reading `.xlsx` files |
+
+---
+
+## 👤 Author
+
+**Student Name**: *(Your Name)*  
+**Course**: *(Course Name)*  
+**Institution**: *(Institution Name)*  
+**Date**: June 2026
+
+---
+
+> *"Quality is our Motto."* — Shaping "skills" for "scaling" higher...!!!
