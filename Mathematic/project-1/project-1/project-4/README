@@ -1,0 +1,104 @@
+# 📊 Statistical Distribution Analysis
+
+## 📖 Overview
+
+This project performs statistical distribution analysis on transaction data using Python. The notebook explores different probability distributions, data transformations, normality testing, and visualization techniques to understand the behavior of transaction amounts.
+
+---
+
+## 🚀 Features
+
+* 📈 Data Exploration and Cleaning
+* 🎲 Bernoulli Distribution Analysis
+* 🔢 Binomial Distribution Analysis
+* 📊 Poisson Distribution Analysis
+* 📉 Log-Normal Distribution Fitting
+* 📐 Power Law Distribution Analysis
+* 📋 Q-Q Plot Visualization
+* 🔄 Box-Cox Transformation
+* 📏 Z-Score Analysis
+* 📈 PDF (Probability Density Function)
+* 📉 CDF (Cumulative Distribution Function)
+* 🏆 Best-Fit Distribution Selection
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* SciPy
+* Jupyter Notebook
+
+---
+
+## 📂 Project Structure
+
+```text
+Statistical_Distribution_Analysis.ipynb
+README.md
+data/
+└── transaction.csv
+```
+
+---
+
+## 📊 Analysis Performed
+
+### 1. Bernoulli Distribution
+
+* Convert transactions into Success/Failure.
+* Calculate probability of success.
+
+### 2. Binomial Distribution
+
+* Analyze transaction success counts over a fixed period.
+
+### 3. Poisson Distribution
+
+* Model transaction frequency per day.
+* Estimate lambda (λ).
+
+### 4. Log-Normal Distribution
+
+* Fit transaction amounts to a log-normal model.
+
+### 5. Power Law Distribution
+
+* Check whether transaction amounts follow a power-law pattern.
+
+### 6. Q-Q Plot
+
+* Compare sample data against a theoretical normal distribution.
+
+### 7. Box-Cox Transformation
+
+* Reduce skewness and improve normality.
+
+### 8. Z-Score Analysis
+
+* Detect outliers and unusual transactions.
+
+### 9. PDF & CDF Analysis
+
+* Visualize probability density and cumulative probability.
+
+---
+
+## 📈 Results
+
+The analysis shows that transaction amounts are positively skewed and are better represented by a Log-Normal Distribution than a Normal Distribution.
+
+Key insights:
+
+* Most transactions are concentrated in lower value ranges.
+* A small number of large transactions create right skewness.
+* Box-Cox transformation improves data normality.
+* Z-score analysis helps identify potential outliers.
+
+---
+
+	
