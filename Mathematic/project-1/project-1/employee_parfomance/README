@@ -1,0 +1,67 @@
+# 📊 Employee Performance Analysis
+
+> A complete statistical analysis of employee performance data using Python — covering descriptive statistics, probability, distributions, and linear algebra.
+
+---
+
+## 📁 Project Structure
+
+```
+📦 Employee Performance Analysis
+ ┣ 📓 Employee_Performance.ipynb   ← Main notebook
+ ┗ 📂 Data
+    ┗ 📄 employee_performance.csv  ← Dataset
+```
+
+---
+
+## 🧠 Topics Covered
+
+### 📖 Part A — Theory
+
+| # | Topic | Description |
+|---|-------|-------------|
+| 1 | 📐 Mean, Median & Mode | Measures of central tendency |
+| 2 | 📏 Range & Variance | Spread of data |
+| 3 | 🔔 Normal vs Poisson Distribution | Continuous vs discrete distributions |
+| 4 | 〰️ Skewness | Asymmetry of distributions |
+| 5 | 🎲 Conditional Probability | P(A\|B) with employee promotion example |
+| 6 | 🔗 Independent vs Mutually Exclusive | Event relationships |
+| 7 | 🧮 Bayes' Theorem | Updating probabilities with evidence |
+| 8 | 🔻 PCA | Dimensionality reduction |
+
+---
+
+### 💻 Part B — Practical Steps
+
+#### 🔢 Step 1 · Central Tendency & Dispersion
+- ✅ Mean, Median, and Mode of **Salary**
+- ✅ Variance and Standard Deviation of **Projects_Completed**
+
+#### 🎲 Step 2 · Probability & Events
+- ✅ Probability of employee promotion
+- ✅ Contingency table — `Promotion_Status` × `Department`
+- ✅ Conditional Probability → `P(Promotion | Performance_Score > 80)`
+
+#### 📈 Step 3 · Distributions & Visualization
+- ✅ Histogram of **Performance_Score** with Gaussian (KDE) curve
+- ✅ Skewness & Kurtosis of **Salary** (manual + SciPy)
+- ✅ Q-Q Plot of **Projects_Completed**
+
+#### 📐 Step 4 · Linear Algebra Application
+- ✅ Employee work vectors: `[Projects_Completed, Working_Hours]`
+- ✅ Dot product between employee vectors (manual + NumPy)
+- ✅ L1 & L2 Norms of work vectors
+- ✅ Angle between two employee vectors (with quiver plot)
+
+---
+## 🏁 Conclusion
+
+This project demonstrates how core mathematical and statistical concepts apply to real-world employee data:
+
+- 📐 **Descriptive statistics** revealed the central tendency and spread of salary and project data.
+- 🎲 **Probability analysis** showed the likelihood of promotion and how performance score influences it.
+- 📈 **Distribution plots** (Histogram, Q-Q Plot) helped visualize data shape and normality.
+- 🔢 **Linear algebra** techniques like dot products, norms, and vector angles gave a geometric view of employee work patterns.
+
+Overall, this analysis builds a strong foundation for understanding data science and machine learning concepts through a practical HR dataset.
