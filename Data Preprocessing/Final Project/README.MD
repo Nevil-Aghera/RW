@@ -117,9 +117,3 @@ The notebook is organized into **8 parts (A–H)** across 81 cells:
 - ✔️ 3 new domain-relevant features engineered
 - ✔️ Final dataset ready for ML modeling (0 missing values, fully numeric)
 - ⚠️ Source & cleaned CSV files not included — must be supplied separately
-
----
-
-## 👤 Author
-
-Customer Credit Risk — End-to-End Data Science Pipeline Project
