@@ -1,0 +1,2402 @@
+[
+  {
+    "customer_id": "C0001",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0002",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0003",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0004",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0005",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0006",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0007",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0008",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0009",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0010",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0011",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0012",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0013",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0014",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0015",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0016",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0017",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0018",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0019",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0020",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0021",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0022",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0023",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0024",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0025",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0026",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0027",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0028",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0029",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0030",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0031",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0032",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0033",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0034",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0035",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0036",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0037",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0038",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0039",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0040",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0041",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0042",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0043",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0044",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0045",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0046",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0047",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0048",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0049",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0050",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0051",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0052",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0053",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0054",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0055",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0056",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0057",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0058",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0059",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0060",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0061",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0062",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0063",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0064",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0065",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0066",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0067",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0068",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0069",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0070",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0071",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0072",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0073",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0074",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0075",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0076",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0077",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0078",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0079",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0080",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0081",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0082",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0083",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0084",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0085",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0086",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0087",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0088",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0089",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0090",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0091",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0092",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0093",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0094",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0095",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0096",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0097",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0098",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0099",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0100",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0101",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0102",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0103",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0104",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0105",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0106",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0107",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0108",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0109",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0110",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0111",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0112",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0113",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0114",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0115",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0116",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0117",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0118",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0119",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0120",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0121",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0122",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0123",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0124",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0125",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0126",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0127",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0128",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0129",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0130",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0131",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0132",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0133",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0134",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0135",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0136",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0137",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0138",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0139",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0140",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0141",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0142",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0143",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0144",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0145",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0146",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0147",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0148",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0149",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0150",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0151",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0152",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0153",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0154",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0155",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0156",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0157",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0158",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0159",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0160",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0161",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0162",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0163",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0164",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0165",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0166",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0167",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0168",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0169",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0170",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0171",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0172",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0173",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0174",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0175",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0176",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0177",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0178",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0179",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0180",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0181",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0182",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0183",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0184",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0185",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0186",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0187",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0188",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0189",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0190",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0191",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0192",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0193",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0194",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0195",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0196",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0197",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0198",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0199",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0200",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0201",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0202",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0203",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0204",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0205",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0206",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0207",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0208",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0209",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0210",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0211",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0212",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0213",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0214",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0215",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0216",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0217",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0218",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0219",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0220",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0221",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0222",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0223",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0224",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0225",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0226",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0227",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0228",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0229",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0230",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0231",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0232",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0233",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0234",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0235",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0236",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0237",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0238",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0239",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0240",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0241",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0242",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0243",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0244",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0245",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0246",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0247",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0248",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0249",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0250",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0251",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0252",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0253",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0254",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0255",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0256",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0257",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0258",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0259",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0260",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0261",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0262",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0263",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0264",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0265",
+    "segment": "Retail",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0266",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0267",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0268",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0269",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0270",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0271",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0272",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0273",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0274",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0275",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0276",
+    "segment": "Premium",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0277",
+    "segment": "Corporate",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0278",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0279",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0280",
+    "segment": "Corporate",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0281",
+    "segment": "SME",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0282",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0283",
+    "segment": "Retail",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0284",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0285",
+    "segment": "Retail",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0286",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Single",
+    "dependents": 1
+  },
+  {
+    "customer_id": "C0287",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0288",
+    "segment": "SME",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0289",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0290",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0291",
+    "segment": "Premium",
+    "acquisition_channel": "Web",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0292",
+    "segment": "SME",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0293",
+    "segment": "SME",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Single",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0294",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0295",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 2
+  },
+  {
+    "customer_id": "C0296",
+    "segment": "Corporate",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0297",
+    "segment": "Corporate",
+    "acquisition_channel": "Branch",
+    "kyc_verified": false,
+    "marital_status": "Divorced",
+    "dependents": 0
+  },
+  {
+    "customer_id": "C0298",
+    "segment": "Premium",
+    "acquisition_channel": "Mobile App",
+    "kyc_verified": true,
+    "marital_status": "Divorced",
+    "dependents": 4
+  },
+  {
+    "customer_id": "C0299",
+    "segment": "Premium",
+    "acquisition_channel": "Agent",
+    "kyc_verified": false,
+    "marital_status": "Married",
+    "dependents": 3
+  },
+  {
+    "customer_id": "C0300",
+    "segment": "Retail",
+    "acquisition_channel": "Agent",
+    "kyc_verified": true,
+    "marital_status": "Married",
+    "dependents": 2
+  }
+]
